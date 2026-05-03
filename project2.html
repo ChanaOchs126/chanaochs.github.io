@@ -9,7 +9,7 @@
         .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
         .visual { border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center; }
         .visual img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .visual p { font-size: 0.95em; color: #444; margin-top: 15px; }
+        .visual p { font-size: 0.95em; color: #444; margin-top: 15px; font-weight: normal; }
         .visual strong { display: block; margin-bottom: 5px; color: #0056b3; }
     </style>
 </head>
@@ -36,40 +36,40 @@
         
         <div class="gallery">
             <div class="visual">
-                <img src="Visual 1.png" alt="Churn Count">
-                <p><strong>Baseline Churn Levels</strong><br>This bar chart shows the distribution of churned vs. retained customers, establishing the baseline attrition rate for the dataset.</p>
+                <img src="Visual 1.png" alt="Contract Risk">
+                <p><strong>Contract Type Risk</strong><br>This chart reveals that customers on month-to-month contracts have the highest risk of leaving, while those on two-year contracts are the most loyal.</p>
             </div>
 
             <div class="visual">
-                <img src="Visual 2.png" alt="Demographics">
-                <p><strong>Senior Citizen & Partner Impact</strong><br>These charts break down churn by demographic factors, showing how partner status and age categories influence loyalty.</p>
+                <img src="Visual 2.png" alt="Heatmap">
+                <p><strong>Churn Density Heatmap</strong><br>This heatmap shows that the highest concentration of lost customers occurs within the first year of a month-to-month contract.</p>
             </div>
 
             <div class="visual">
-                <img src="ill_2_tenure_danger_colored.png" alt="Tenure">
-                <p><strong>The First-Year Risk</strong><br>This visualization highlights that customers are most likely to leave within their first 12 months, with risk dropping significantly after the first year.</p>
+                <img src="ill_2_tenure_danger_colored.png" alt="Tenure Chart">
+                <p><strong>The Critical First Year</strong><br>This visualization highlights that the risk of losing a customer is highest during the first 12 months of service, dropping significantly after the first year.</p>
             </div>
 
             <div class="visual">
-                <img src="Untitled.png" alt="Correlation">
-                <p><strong>Feature Correlations</strong><br>A heatmap showing how strongly different services (like tech support or streaming) are mathematically related to the churn target.</p>
+                <img src="Untitled.png" alt="Tenure Distribution">
+                <p><strong>Tenure Distribution</strong><br>This chart shows that customers become significantly less likely to leave the company the longer they stay, leading to a more stable loyal base.</p>
             </div>
 
             <div class="visual">
-                <img src="ill_5_scatter_perfect.jpg" alt="Dotted Plot">
-                <p><strong>Spending vs. Tenure</strong><br>This scatter plot visualizes the relationship between monthly charges and total spend, helping identify high-paying customers at risk.</p>
+                <img src="ill_5_scatter_perfect.jpg" alt="Spending Scatter Plot">
+                <p><strong>Spending vs. Loyalty</strong><br>This scatter plot visualizes monthly billing distribution across the customer's lifespan to help identify high-risk spending patterns.</p>
             </div>
 
             <div class="visual">
-                <img src="Visual 6.png" alt="Service Tiers">
-                <p><strong>Internet Service Type</strong><br>This comparison reveals that Fiber Optic customers have a significantly higher churn rate compared to DSL users.</p>
+                <img src="Visual 6.png" alt="Billing Density">
+                <p><strong>Monthly Billing Distribution</strong><br>This chart shows that customers who leave tend to have higher monthly bills, with a significant churn spike occurring at higher price points.</p>
             </div>
         </div>
     </section>
 
     <section>
         <h3>Strategic Recommendations</h3>
-        <p>The analysis identified that month-to-month contracts and Fiber Optic service tiers are the primary drivers of attrition. We recommend launching targeted retention pilot programs for high-value customers within these specific risk segments.</p>
+        <p>The analysis identified that contract type and billing amounts are the primary drivers of attrition. We recommend launching targeted retention pilot programs for high-value customers within these specific risk segments, particularly those in their first year of service.</p>
     </section>
 
 </body>
