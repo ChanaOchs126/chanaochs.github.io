@@ -5,8 +5,17 @@
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
         nav { margin-bottom: 20px; }
-        video { background-color: #000; border: 1px solid #ccc; }
         section { margin-bottom: 30px; }
+        .video-link { 
+            display: inline-block; 
+            background-color: #0056b3; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+        }
+        .video-link:hover { background-color: #003d82; }
     </style>
 </head>
 <body>
@@ -22,38 +31,38 @@
     
     <section>
         <h3>The Goal</h3>
-        <p>In support of NYC's Vision Zero initiative, my team and I wanted to change how the city handles traffic safety. Instead of waiting for accidents to happen before installing signals, we built a way to predict which intersections are dangerous before a crash ever occurs.</p>
+        <p>In support of NYC's Vision Zero initiative, my team and I set out to transform how the city approaches traffic safety[cite: 8, 10, 80]. Instead of relying on reactive measures, we developed a predictive model to identify high-risk intersections before accidents occur, allowing for proactive infrastructure improvements[cite: 10].</p>
     </section>
 
     <section>
-        <h3>How I Approached the Data</h3>
-        <p>I integrated several massive datasets, including historical crash records from 2022 through early 2026 and community maintenance requests. By looking at the "structural signature" of these locations, I could identify patterns that lead to high-risk environments.</p>
+        <h3>Data-Driven Approach</h3>
+        <p>I analyzed multiple datasets, including historical crash records from 2022 through March 2026 and community maintenance requests for traffic signals[cite: 17, 18, 19, 20]. By identifying the "structural signature" of these locations, I was able to pinpoint where future risks are highest[cite: 14, 15].</p>
         <ul>
-            <li><strong>The Model:</strong> I used a Random Forest Classifier to process these complex geographic patterns.</li>
-            <li><strong>Accuracy:</strong> The model hit a 97% recall rate, meaning it is incredibly effective at catching historically dangerous sites that need immediate attention.</li>
+            <li><strong>The Model:</strong> I utilized a Random Forest Classifier consisting of 200 decision trees to recognize complex geographic risk patterns[cite: 22].</li>
+            <li><strong>Accuracy:</strong> The model achieved a 97% recall rate, ensuring that the vast majority of historically dangerous sites are prioritized for audit[cite: 24, 25].</li>
         </ul>
     </section>
 
     <section>
-        <h3>Real-World Results</h3>
-        <p>We successfully identified the top 100 intersections that the DOT should audit immediately. Interestingly, our results showed that risk isn't spread evenly—over half of the high-priority sites were concentrated in the Bronx, followed closely by Staten Island.</p>
+        <h3>Key Findings</h3>
+        <p>Our analysis successfully identified the top 100 intersections requiring immediate attention[cite: 27]. The risk is heavily concentrated geographically, with 55% of priority locations found in the Bronx and 32% in Staten Island[cite: 29, 30].</p>
     </section>
 
     <section>
-        <h3>Project Walkthrough</h3>
-        <p>I put together a video walkthrough to show exactly how the data looks and how the model reached its conclusions. Click play below to watch:</p>
+        <h3>Project Walkthrough & Presentation</h3>
+        <p>I have recorded a full video walkthrough and presentation detailing the methodology, data visualizations, and final modeling results. Due to the high-resolution content, the presentation is hosted via OneDrive:</p>
         
-        <video width="100%" controls>
-            <source src="Final.mp4" type="video/mp4">
-            Your browser does not support the video tag. 
-        </video>
-        <p><small><em>Note: If the video doesn't play, please ensure "Final.mp4" is uploaded to the main folder of your GitHub repository.</em></small></p>
+        <p>
+            <a href="https://1drv.ms/v/c/97275a69c1557111/IQDnFYRv0hDSSrxsy4QhBAzZAUcrQPKm4lfiSP_gGUpGjrM?e=WsuzOX" target="_blank" class="video-link">
+                Watch Final Project Presentation
+            </a>
+        </p>
     </section>
 
     <section>
-        <h3>My Recommendations</h3>
-       <h3>Full Presentation</h3>
-    <p>Due to the size of the high-resolution visualizations and modeling data, the full presentation (Milestone 3) is hosted externally:</p>
-    <p><strong><a href="https://1drv.ms/v/c/97275a69c1557111/IQDnFYRv0hDSSrxsy4QhBAzZAUcrQPKm4lfiSP_gGUpGjrM?e=WsuzOX" target="_blank">View Milestone 3 PowerPoint Presentation</a></strong></p>
+        <h3>Recommendations</h3>
+        <p>Based on these findings, I recommend dispatching field teams to conduct structural audits at these 100 high-risk locations[cite: 33]. By fast-tracking low-cost interventions at sites with a high risk score, the city can take a meaningful step toward achieving Vision Zero[cite: 34, 43].</p>
+    </section>
+
 </body>
 </html>
