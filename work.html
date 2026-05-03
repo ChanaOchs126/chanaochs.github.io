@@ -13,27 +13,35 @@
         nav { 
             margin-bottom: 20px; 
         }
-        /* Color matching the 'purplish' blue from your Project 1 button and links */
-        a { 
-            color: #0056b3; 
+        /* Default Navigation Link Style */
+        nav a { 
+            color: #333; 
             text-decoration: none; 
         }
-        a:hover { 
+        /* The "Active" Purplish-Blue Style */
+        nav a.active { 
+            color: #0056b3; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
             text-decoration: underline; 
         }
-        /* Headers now match the brand color of the NYC Safety project */
+        /* Headers matching the purplish-blue brand */
         h1, h3 { 
             color: #0056b3; 
         }
         section { 
             margin-bottom: 30px; 
         }
+        ul { 
+            padding-left: 20px; 
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a> | 
-        <a href="work.html">Work & Contact</a> | 
+        <a href="work.html" class="active">Work & Contact</a> | 
         <a href="project1.html">NYC Safety Project</a> | 
         <a href="project2.html">Customer Churn Project</a> |
         <a href="project3.html">Project 3</a>
@@ -62,7 +70,7 @@
         <p>Email: <a href="mailto:cochs@my365.bellevue.edu">cochs@my365.bellevue.edu</a></p>
 
         <p>
-            <a href="resume.pdf" target="_blank">View My Resume</a>
+            <a href="resume.pdf" target="_blank"><strong>View My Resume</strong></a>
         </p>
     </section>
 
