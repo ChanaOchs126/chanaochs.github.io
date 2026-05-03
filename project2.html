@@ -9,7 +9,8 @@
         .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
         .visual { border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center; }
         .visual img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .visual p { font-size: 0.95em; color: #444; margin-top: 15px; font-weight: bold; }
+        .visual p { font-size: 0.95em; color: #444; margin-top: 15px; }
+        .visual strong { display: block; margin-bottom: 5px; color: #0056b3; }
     </style>
 </head>
 <body>
@@ -26,49 +27,49 @@
     
     <section>
         <h3>Project Objective</h3>
-        <p>In the telecommunications industry, retaining an existing customer is significantly more cost-effective than acquiring a new one. This project analyzes a dataset of 7,043 subscribers to identify the specific behavioral patterns and service configurations that lead to customer turnover. The ultimate goal is to move from reactive customer service to a proactive retention strategy.</p>
+        <p>In the telecommunications industry, retaining an existing customer is significantly more cost-effective than acquiring a new one. This project analyzes a dataset of 7,043 subscribers to identify the specific behavioral patterns that lead to customer turnover. The goal is to move from reactive customer service to a proactive retention strategy.</p>
     </section>
 
     <section>
-        <h3>Visualizing the Drivers of Churn</h3>
-        <p>Data visualization was the primary tool used to uncover "pain points" in the customer journey. By examining demographics, contract types, and billing monthly charges, several distinct risk signatures were identified.</p>
+        <h3>Visual Discovery</h3>
+        <p>The following charts identify the "pain points" where customers are most likely to leave the service.</p>
         
         <div class="gallery">
             <div class="visual">
-                <img src="Visual 1.png" alt="Churn Distribution">
-                <p>Overall Retention vs. Churn Ratio</p>
+                <img src="Visual 1.png" alt="Churn Count">
+                <p><strong>Who is Leaving?</strong><br>This bar chart shows the total number of customers we kept versus those who left. It gives us a baseline look at how big the churn problem actually is.</p>
             </div>
+
             <div class="visual">
-                <img src="Visual 2.png" alt="Demographic Trends">
-                <p>Impact of Demographic Segmentation</p>
+                <img src="Visual 2.png" alt="Demographics">
+                <p><strong>Demographics at a Glance</strong><br>This breakdown shows how different groups (like seniors or families) stay with the company. It helps us see if certain age groups need more attention.</p>
             </div>
+
             <div class="visual">
-                <img src="ill_2_tenure_danger_colored.png" alt="Tenure Risk">
-                <p>The "Danger Zone" for New Subscribers</p>
+                <img src="ill_2_tenure_danger_colored.png" alt="Tenure">
+                <p><strong>The "New Customer" Risk</strong><br>This chart highlights that customers are most likely to leave in their first few months. If they stay past the first year, they are much more likely to remain loyal.</p>
             </div>
+
             <div class="visual">
-                <img src="Untitled.png" alt="Feature Correlation">
-                <p>Correlation Between Services and Attrition</p>
+                <img src="Untitled.png" alt="Correlation">
+                <p><strong>Hidden Connections</strong><br>This "Heatmap" shows which features are linked. For example, it shows how month-to-month contracts are strongly tied to a higher risk of leaving.</p>
             </div>
+
             <div class="visual">
-                <img src="ill_5_scatter_perfect.jpg" alt="Charge Distributions">
-                <p>Billing Thresholds and Churn Probability</p>
+                <img src="ill_5_scatter_perfect.jpg" alt="Charges Scatter Plot">
+                <p><strong>The Price Point Problem</strong><br>This dotted plot shows the relationship between monthly bills and total charges. It helps us spot if customers with high monthly bills are the ones dropping off.</p>
             </div>
+
             <div class="visual">
-                <img src="Visual 6.png" alt="Service Tier Risk">
-                <p>Risk Variance Across Service Tiers</p>
+                <img src="Visual 6.png" alt="Service Types">
+                <p><strong>Service Type Impact</strong><br>This chart looks at different internet types. It reveals that customers with Fiber Optic service actually leave more often than those with DSL.</p>
             </div>
         </div>
     </section>
 
     <section>
-        <h3>Core Insights</h3>
-        <p>The analysis revealed that contract type and monthly charges are the most significant predictors of churn. Specifically, customers on month-to-month contracts or those utilizing Fiber Optic services without additional support bundles showed a markedly higher probability of leaving. These insights allow for the creation of targeted "Value at Risk" segments for the marketing department.</p>
-    </section>
-
-    <section>
-        <h3>Strategic Recommendations</h3>
-        <p>The primary recommendation is to implement a pilot retention program focusing on the top 10% highest-value, highest-risk customers. By offering proactive value-add incentives (such as streaming credits or data upgrades) rather than reactive discounts, the company can improve loyalty while protecting profit margins.</p>
+        <h3>Final Insights & Recommendations</h3>
+        <p>The analysis revealed that contract type and monthly charges are the most significant predictors of churn. The primary recommendation is to implement a pilot retention program focusing on high-value, high-risk customers by offering proactive incentives like streaming credits or data upgrades.</p>
     </section>
 
 </body>
