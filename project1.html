@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Project 1 | Chana Ochs</title>
+    <title>NYC Traffic Safety Analysis | Chana Ochs</title>
 </head>
 <body>
-    <h1>Data-Driven Safety Prioritization for NYC Intersections</h1>
-    <p>
+    <nav>
         <a href="index.html">Home</a> | 
         <a href="work.html">Work & Contact</a> | 
-        <a href="project1.html">Project 1</a>
-    </p>
+        <a href="project1.html">NYC Safety Project</a>
+    </nav>
     
     <hr>
 
-    <h3>Project Overview</h3>
-    <p>This project utilizes a predictive model to identify high-risk "uncontrolled" intersections across New York City[cite: 10]. By analyzing geographic and structural signatures, the goal is to provide the Department of Transportation (DOT) with a proactive roadmap to intervene before accidents occur, supporting the city's Vision Zero initiative[cite: 8, 10, 80].</p>
+    <h1>Data-Driven Safety Prioritization for NYC Intersections</h1>
+    
+    <section>
+        <h3>Executive Summary</h3>
+        <p>This initiative leverages predictive analytics to identify high-risk intersections across New York City. By moving beyond reactive safety measures, this model provides the Department of Transportation (DOT) with a proactive framework to implement infrastructure changes before accidents occur, supporting the city's Vision Zero goals[cite: 10, 80].</p>
+    </section>
 
-    <h3>Key Insights & Process</h3>
-    <ul>
-        <li><strong>The Problem:</strong> NYC infrastructure improvements are often reactive, with signals installed only after a location has a history of injuries[cite: 12, 13]. This project seeks to identify "latent risk" before incidents happen[cite: 15].</li>
-        <li><strong>Data Integration:</strong> The analysis synthesized four major datasets: NYC Motor Vehicle Collisions (2022-2026), Traffic Signal Study Requests, Signal Condition reports (311 data), and a comprehensive inventory of existing signals[cite: 17, 18, 19, 20, 21].</li>
-        <li><strong>The Model:</strong> We utilized a <strong>Random Forest Classifier</strong> composed of 200 decision trees[cite: 22]. The model achieved a <strong>Recall score of 0.97</strong>, ensuring that 97% of historically dangerous sites were correctly captured for prioritization[cite: 24, 25].</li>
-        <li><strong>Major Findings:</strong> The model identified the top 100 highest-priority intersections for audit, with 55% of the risk concentrated in the Bronx and 32% in Staten Island[cite: 27, 29, 30].</li>
-    </ul>
+    <section>
+        <h3>Analysis & Methodology</h3>
+        <ul>
+            <li><strong>The Challenge:</strong> Urban infrastructure improvements are traditionally reactive. This study identifies "latent risk" signatures at intersections that have not yet established a history of accidents[cite: 12, 13, 15].</li>
+            <li><strong>Data Sources:</strong> The model integrates historical crash data (2022-2026), public traffic study requests, and infrastructure maintenance reports[cite: 17, 18, 19, 20, 21].</li>
+            <li><strong>Machine Learning:</strong> A <strong>Random Forest Classifier</strong> was trained to recognize geographic risk patterns. The model achieved a <strong>Recall score of 0.97</strong>, effectively capturing nearly all high-priority sites[cite: 22, 24, 25].</li>
+        </ul>
+    </section>
 
-    <h3>Recommendation & Action</h3>
-    <p>The primary recommendation is to dispatch field teams to audit these high-risk locations and fast-track low-cost interventions for any site with a Risk Score above 0.95[cite: 33, 34]. This allows the city to move from a reactive safety posture to a proactive one[cite: 42].</p>
+    <section>
+        <h3>Strategic Results</h3>
+        <p>Our findings pinpointed the top 100 intersections requiring immediate audit. Geographic distribution shows that risk is heavily concentrated, with 55% of priority locations in the Bronx and 32% in Staten Island[cite: 27, 29, 30].</p>
+    </section>
 
-    <h3>Full Presentation</h3>
-    <p>Due to the size of the high-resolution visualizations and modeling data, the full presentation (Milestone 3) is hosted externally:</p>
-    <p><strong><a href="https://1drv.ms/v/c/97275a69c1557111/IQDnFYRv0hDSSrxsy4QhBAzZAUcrQPKm4lfiSP_gGUpGjrM?e=ITSqWy" target="_blank">View Milestone 3 PowerPoint Presentation</a></strong></p>
+    <section>
+        <h3>Final Presentation</h3>
+        <p>Watch the detailed results and project walkthrough below:</p>
+        
+        <video width="720" height="405" controls>
+            <source src="Final.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h3>Recommendations</h3>
+        <p>We recommend dispatching field teams for immediate structural audits at high-risk locations and fast-tracking low-cost safety interventions for sites with a Risk Score exceeding 0.95[cite: 33, 34].</p>
+    </section>
+
 </body>
 </html>
