@@ -5,11 +5,32 @@
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
         nav { margin-bottom: 20px; }
+        
+        /* Navigation Link Styles */
+        nav a { 
+            color: #333; 
+            text-decoration: none; 
+        }
+        /* Active link color matches the purplish-blue */
+        nav a.active { 
+            color: #0056b3; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            text-decoration: underline; 
+        }
+
         section { margin-bottom: 30px; }
+        
+        /* Headers set to black for consistency across all pages */
+        h1, h3 { color: black; }
+
         .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
         .visual { border: 1px solid #eee; padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center; }
         .visual img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .visual p { font-size: 0.95em; color: #444; margin-top: 15px; font-weight: normal; }
+        
+        /* Keeping the inner labels blue to highlight specific findings */
         .visual strong { display: block; margin-bottom: 5px; color: #0056b3; }
     </style>
 </head>
@@ -18,7 +39,7 @@
     <a href="index.html">Home</a> | 
     <a href="work.html">Work & Contact</a> | 
     <a href="project1.html">NYC Safety Project</a> | 
-    <a href="project2.html">Customer Churn Project</a> |
+    <a href="project2.html" class="active">Customer Churn Project</a> |
     <a href="project3.html">Project 3</a>
 </nav>
     
