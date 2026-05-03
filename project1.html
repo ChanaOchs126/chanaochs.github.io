@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NYC Traffic Safety Analysis | Chana Ochs</title>
+    <title>NYC Safety Project | Chana Ochs</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
+        nav { margin-bottom: 20px; }
+        video { background-color: #000; border: 1px solid #ccc; }
+        section { margin-bottom: 30px; }
+    </style>
 </head>
 <body>
     <nav>
@@ -12,40 +18,41 @@
     
     <hr>
 
-    <h1>Data-Driven Safety Prioritization for NYC Intersections</h1>
+    <h1>Proactive Safety: Prioritizing NYC's Uncontrolled Intersections</h1>
     
     <section>
-        <h3>Executive Summary</h3>
-        <p>This initiative leverages predictive analytics to identify high-risk intersections across New York City. By moving beyond reactive safety measures, this model provides the Department of Transportation (DOT) with a proactive framework to implement infrastructure changes before accidents occur, supporting the city's Vision Zero goals[cite: 10, 80].</p>
+        <h3>The Goal</h3>
+        <p>In support of NYC's Vision Zero initiative, my team and I wanted to change how the city handles traffic safety. Instead of waiting for accidents to happen before installing signals, we built a way to predict which intersections are dangerous before a crash ever occurs.</p>
     </section>
 
     <section>
-        <h3>Analysis & Methodology</h3>
+        <h3>How I Approached the Data</h3>
+        <p>I integrated several massive datasets, including historical crash records from 2022 through early 2026 and community maintenance requests. By looking at the "structural signature" of these locations, I could identify patterns that lead to high-risk environments.</p>
         <ul>
-            <li><strong>The Challenge:</strong> Urban infrastructure improvements are traditionally reactive. This study identifies "latent risk" signatures at intersections that have not yet established a history of accidents[cite: 12, 13, 15].</li>
-            <li><strong>Data Sources:</strong> The model integrates historical crash data (2022-2026), public traffic study requests, and infrastructure maintenance reports[cite: 17, 18, 19, 20, 21].</li>
-            <li><strong>Machine Learning:</strong> A <strong>Random Forest Classifier</strong> was trained to recognize geographic risk patterns. The model achieved a <strong>Recall score of 0.97</strong>, effectively capturing nearly all high-priority sites[cite: 22, 24, 25].</li>
+            <li><strong>The Model:</strong> I used a Random Forest Classifier to process these complex geographic patterns.</li>
+            <li><strong>Accuracy:</strong> The model hit a 97% recall rate, meaning it is incredibly effective at catching historically dangerous sites that need immediate attention.</li>
         </ul>
     </section>
 
     <section>
-        <h3>Strategic Results</h3>
-        <p>Our findings pinpointed the top 100 intersections requiring immediate audit. Geographic distribution shows that risk is heavily concentrated, with 55% of priority locations in the Bronx and 32% in Staten Island[cite: 27, 29, 30].</p>
+        <h3>Real-World Results</h3>
+        <p>We successfully identified the top 100 intersections that the DOT should audit immediately. Interestingly, our results showed that risk isn't spread evenly—over half of the high-priority sites were concentrated in the Bronx, followed closely by Staten Island.</p>
     </section>
 
     <section>
-        <h3>Final Presentation</h3>
-        <p>Watch the detailed results and project walkthrough below:</p>
+        <h3>Project Walkthrough</h3>
+        <p>I put together a video walkthrough to show exactly how the data looks and how the model reached its conclusions. Click play below to watch:</p>
         
-        <video width="720" height="405" controls>
+        <video width="100%" controls>
             <source src="Final.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            Your browser does not support the video tag. 
         </video>
+        <p><small><em>Note: If the video doesn't play, please ensure "Final.mp4" is uploaded to the main folder of your GitHub repository.</em></small></p>
     </section>
 
     <section>
-        <h3>Recommendations</h3>
-        <p>We recommend dispatching field teams for immediate structural audits at high-risk locations and fast-tracking low-cost safety interventions for sites with a Risk Score exceeding 0.95[cite: 33, 34].</p>
+        <h3>My Recommendations</h3>
+        <p>Based on this data, I recommend that field teams be dispatched to audit the top 100 locations for structural issues. By fast-tracking low-cost safety fixes for sites with high risk scores, the city can move from being reactive to truly proactive.</p>
     </section>
 
 </body>
