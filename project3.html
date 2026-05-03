@@ -3,8 +3,34 @@
 <head>
     <title>Future Analysis | Chana Ochs</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        nav { margin-bottom: 20px; }
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: auto; 
+            padding: 20px; 
+        }
+        nav { 
+            margin-bottom: 20px; 
+        }
+        
+        /* Navigation Link Styles */
+        nav a { 
+            color: #333; 
+            text-decoration: none; 
+        }
+        /* Active link color matches the purplish-blue */
+        nav a.active { 
+            color: #0056b3; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            text-decoration: underline; 
+        }
+
+        /* Headers set to black for consistency */
+        h1 { color: black; }
+
         .placeholder { 
             text-align: center; 
             padding: 100px 20px; 
@@ -21,7 +47,7 @@
         <a href="work.html">Work & Contact</a> | 
         <a href="project1.html">NYC Safety Project</a> | 
         <a href="project2.html">Customer Churn Project</a> |
-        <a href="project3.html">Project 3</a>
+        <a href="project3.html" class="active">Project 3</a>
     </nav>
     
     <hr>
