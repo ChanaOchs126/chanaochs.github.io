@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Analysis | Chana Ochs</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
+        nav { margin-bottom: 20px; }
+        section { margin-bottom: 30px; }
+        .gallery { display: grid; grid-template-columns: 1-fr 1-fr; gap: 20px; margin-top: 20px; }
+        .visual { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="work.html">Work & Contact</a> | 
+        <a href="project1.html">NYC Safety Project</a> |
+        <a href="project2.html">Customer Churn Project</a>
+    </nav>
+    
+    <hr>
+
+    <h1>Predictive Analytics: Customer Churn in Telecommunications</h1>
+    
+    <section>
+        <h3>Project Objective</h3>
+        <p>This project addresses the economic challenge of customer churn within the telecommunications industry[cite: 11]. Because acquiring new customers is significantly more expensive than retaining existing ones, the goal was to build a system that identifies high-risk customers before they cancel their service.</p>
+    </section>
+
+    <section>
+        <h3>Visualizing the Churn Landscape</h3>
+        <p>The following visualizations were developed to identify the specific behavioral signatures of customers likely to churn. By analyzing a dataset of 7,043 records, several key "pain points" were identified[cite: 11].</p>
+        
+        <div class="gallery">
+            <div class="visual">
+                <img src="ill_2_tenure_danger_colored.png" alt="Tenure vs Churn">
+                <p><strong>Tenure Risk:</strong> Identifying the critical window where new customers are most likely to leave[cite: 6].</p>
+            </div>
+            <div class="visual">
+                <img src="Visual 1.png" alt="Churn Distribution">
+                <p><strong>Churn Overview:</strong> Visualizing the baseline ratio of retained vs. lost customers[cite: 9].</p>
+            </div>
+            <div class="visual">
+                <img src="ill_5_scatter_perfect.jpg" alt="Contract Analysis">
+                <p><strong>Contract Impact:</strong> How different billing cycles influence long-term retention[cite: 7].</p>
+            </div>
+            <div class="visual">
+                <img src="Visual 6.png" alt="Service Tiers">
+                <p><strong>Service Tiers:</strong> Identifying specific product bundles, such as Fiber Optic service, that correlate with higher risk[cite: 5].</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Modeling & Results</h3>
+        <p>Beyond the visualizations, the project utilized advanced machine learning models, including XGBoost and Random Forest, to deliver accurate probability scores for each customer[cite: 12].</p>
+        <ul>
+            <li><strong>Key Predictors:</strong> Month-to-month contracts and high monthly charges emerged as the top indicators of churn[cite: 12].</li>
+            <li><strong>Actionable Insight:</strong> By segmenting customers by "Value at Risk," the marketing team can prioritize retention offers for high-value users[cite: 12].</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Strategic Recommendations</h3>
+        <p>The analysis suggests launching targeted pilot campaigns for the top 10% highest-risk customers[cite: 12]. By intervening with value-add offers rather than deep discounts, the company can protect its bottom line and increase overall customer lifetime value.</p>
+    </section>
+
+</body>
+</html>
